@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(206, 206, 206) !important;
+}
+
+.btn {
+    background-color: rgb(9, 10, 48) !important;
+    color: rgb(255, 255, 255) !important;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+
+ .nav-link {
+    color: #000000;
+    font-size: 20px !important;
+ }
+ .form-control{
+    resize: none;
+ }

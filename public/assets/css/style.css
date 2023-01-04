@@ -1,0 +1,24 @@
+*  {
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+}
+body {
+    padding-bottom: 500px;
+    background-color:gainsboro !important;
+}
+
+ul.navbar-nav li.nav-item a.nav-link.active {
+    font-size: large !important;
+    font-weight: bold;
+}
+
+.btn.btn-primary {
+    background-color: black !important;
+    border: none;
+}
+.card-title{
+    font-weight: bold !important;
+    font-size:x-large;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+

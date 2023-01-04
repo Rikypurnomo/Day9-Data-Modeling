@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>addproject</title>
+    <link rel="stylesheet" href="/public/assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="shadow navbar navbar-expand-lg bg-body-tertiary text-black fw-bold">
+      <div class="container-fluid container">
+        <a  class="navbar-brand" href="https://dumbways.id/">
+          <img src="/public/assets/images/logobrand.png" width="40" alt="logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/project">Add Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="d-flex bg-dark  ">
+        <a class="btn text-white" href="/contact"> Contact Me </a>
+      </div>
+    </nav>
+        
+        <div class="container mt-5" style="width: 40vw;">
+                <h3 style="text-align:center;" class="mb-5">ADD MY PROJECT</h3>
+                <form action="/project" method="POST">
+                  
+                  <div class="mb-3 ms-5 me-5">
+                    <label for="Project_name" class="form-label">Project Name</label>
+                    <input type="text" id="project_name" class="form-control" name="name">
+                  </div>
+
+                  <div class="d-flex gap-2 ms-5 me-5">
+                    <div class="mb-3 w-100">
+                      <label for="start_date" class="form-label">Start Date</label>
+                      <input type="date" class="form-control" id="start_date" name="start-date">
+                    </div>
+                      <div class="mb-3 w-100">
+                      <label for="and_date" class="form-label">End Date</label>
+                      <input type="date" class="form-control" id="end_date" name="end-date">
+                    </div>
+                  </div>
+
+                  <div class="mb-3 ms-5 me-5">
+                    <label for="message" class="form-label">Description</label>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+
+                    <div class="mb-3">
+                      <label class="form-label">Technologies</label>
+                      <div class="d-flex flex-row">
+                          <div class="half me-5">
+                              <div class="form-check mb-3">
+                                  <input type="checkbox" value="nodeJs" class="form-check-input" id="nodejs" name="project-tech">
+                                  <label for="nodejs" class="form-check-label text-secondary">Node JS</label>
+                              </div>
+                              <div class="form-check">
+                                <input type="checkbox" value="reactJs" class="form-check-input" id="reactjs" name="project-tech">
+                                <label for="reactjs" class="form-check-label text-secondary">React JS</label>
+                            </div>
+                        </div>
+                        <div class="half">
+                          <div class="form-check mb-3">
+                              <input type="checkbox" value="nextJs" class="form-check-input" id="nextjs" name="project-tech">
+                              <label for="nextjs" class="form-check-label text-secondary">Next JS</label>
+                          </div>
+                          <div class="form-check">
+                              <input type="checkbox" class="form-check-input" value="typeScript" id="typescript" name="project-tech">
+                              <label for="typescript" class="form-check-label text-secondary">Typescript</label>
+                          </div>
+                      </div> 
+                </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="upload-image" class="form-label">Upload Image</label>
+              <input type="file" id="upload-image" class="form-control shadow-sm rounded">
+          </div>
+          <div class="mb-4 d-flex justify-content-end">
+              <button type="" class="btn btn-primary">Submit</button>
+          </div>
+      </form>
+    </div>
+  </div>
+
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
